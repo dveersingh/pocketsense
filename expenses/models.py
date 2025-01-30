@@ -16,4 +16,4 @@ class Expense(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='expenses', blank=True, null=True)
 
     def __str__(self):
-        return f"{self.amount} - {self.category}
+        return {self.amount} - {self.category}
